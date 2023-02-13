@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+	<link href="test.css" rel="stylesheet" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script language="JavaScript" type="text/javascript" src="test.js"></script>
+  </head>
+<body>
+ <header>
+  <div class="logo">  <a href="https://www.shortfilmwindow.com">
+						<img src="https://www.shortfilmwindow.com/wp-content/themes/short-film/assets/img/logo.png" class="img-responsive ">				
+					</a>
+	</div>					
+    <nav>		
+		<a href="https://www.shortfilmwindow.com" style="    border-right: none !important;"><img src="https://www.shortfilmwindow.com/wp-content/themes/short-film/assets/img/logo_smallerscreen.png" class="img-responsive fulllogo">
+		</a>
+      <a href="https://www.shortfilmwindow.com/">Home</a>
+     <a href="https://www.shortfilmwindow.com/movies/" aria-current="page">Movies</a>
+	  <a href="https://www.shortfilmwindow.com/articles/">Articles</a>
+      <a href="https://www.shortfilmwindow.com/playlist/">Playlists</a>
+      <a href="https://www.shortfilmwindow.com/submit-film/">Submit Film</a>
+	  <a href="https://www.shortfilmwindow.com/contact-us/">Contact Us </a>
+	   <div class="social-links">
+	   <div class="fb link">
+			                <div class="icon">
+			                   <i class="fa fa-facebook"></i></i>
+			                </div>			               
+			            </div>
+					   <div class="clearfix"></div>
+					   <div class="twitter link">							
+			                <div class="icon">
+			                    <i class="fa fa-twitter"></i>
+			                </div>
+					  </div>
+			        </div>
+    </nav>	
+  </header>    
+  <div class="wrapper">
+    <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="brand">EXPLORE</h2>
+                    </div>
+					<div class="col-md-3"></div>
+					<div class="col-md-3 col-sm-12">
+						<div class="m-t-20 search_menu">
+							   <div class="form-group">
+                                    <input type="text" class="form-control search" value="" placeholder="Search"/>
+                                    <i class="fa fa-search"></i>
+                                </div>
+								</div>
+					</div>
+                </div>
+   <hr class="m-t-0">
+   <div class="row pushin">
+                    <div class="col-md-5">
+                		<h5 class="un">FILTER BY</h5>
+						<div class="form-horizontal">
+                            <div class="row form-group">
+                                <label for="" class="col-md-3 control-label"><em>Genre:</em> </label>
+                                <div class="col-md-9">
+                                	<select name="genre" id="genre">
+                                        <option value="">All</option>
+                                        <option value="2">Indian</option><option value="7">Horror</option><option value="9">Sci-Fi</option><option value="4">Thriller</option><option value="11">Award Winning</option><option value="5">Animation</option><option value="8">Romance</option><option value="6">Comedy</option><option value="14">Famous Directors</option><option value="10">Fantasy</option><option value="12">Experimental</option><option value="13">Bed Time Stories</option><option value="15">Dark</option><option value="22">Drama</option><option value="33">Disaster Porn</option><option value="34">Short Doc</option><option value="35">Oscar Winning</option><option value="44">Family</option><option value="55">Surreal</option><option value="57">Space</option><option value="59">Offline</option><option value="1">Uncategorized</option>                                    </select>
+                                </div>
+                            </div>
+                       </div>
+					 	<div class="form-horizontal">
+						   <div class="row form-group">								
+								<label for="" class="col-md-3 control-label"><em>Language:</em> </label>
+                                <div class="col-md-9">
+									<select name="language" id="language">
+										<option value="">All</option>
+										<option value="20">French</option><option value="21">Romanian</option><option value="24">Hindi</option><option value="25">English</option><option value="26">Japanese</option><option value="37">German</option><option value="39">Korean</option><option value="41">Spanish</option><option value="43">Mandarin</option><option value="46">Swedish</option><option value="49">Arabic</option><option value="52">Persian</option><option value="53">Catalan</option><option value="56">Marathi</option><option value="58">Assamese</option><option value="65">Bengali</option><option value="74">Danish</option><option value="93">Malayalam</option>
+								   </select>
+
+							   </div>
+                            </div>
+
+					 	</div>
+
+				   </div>
+<div class="col-md-3 "></div>
+					<div class="col-md-4  sort">
+
+					 	<div class="form-group row form-horizontal">
+
+						   <label for="" class="col-md-3 control-label"><em>Sort by:</em> </label>
+                            <div class="col-md-9">
+                                <select name="sort" id="sort">
+                                    <option value="1">Freshness</option>
+                                    <option value="2">Popularity</option>
+                                    <option value="3">Length</option>
+                                </select>
+                            </div>
+					    </div>
+						<div class="row opts">
+                            <div class="col-md-12">
+                                <a href="#" id="gridoption" class="option" title="Grid"><i class="fa fa-th-large fa-3x text-grid"></i></a>
+                                <a href="#" id="listoption"  class="option"title="List"><i class="fa fa-th-list fa-3x"></i></a>
+                                <a href="#" id="couchoption" class="option" title="Couch"><i class="fa fa-list-alt fa-3x"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                 <hr class="m-t-0"/>
+				</div>
+<div class="container">
+  <div class="row">  
+    <div class="col grid-box">
+      <div class="photo-container " style="background-image: url(https://www.shortfilmwindow.com/wp-content/uploads/2021/03/Webp.net-resizeimage-20-900x603.jpg);"> 
+	  </div>
+		<div class="content-align-bottom">
+			<div class="grid-text-wrap">
+				<div class="grid-title">The Passing</div>
+				<div class="grid-meta ">India/17 MIN</div>
+				<div class="grid-meta">Indian, Experimental, Drama</div>
+				<div class="grid-meta ">DIR.Raghavi Agarwal</div>	
+			</div>
+		</div>     
+		<div class="slide "> 
+		<div class="grid-text-wrap hover-text">
+			<div class="grid-title">The Passing</div>
+			<div class="grid-meta">
+				<div class="row">
+					<div class="col-md-4 vid-meta">						
+						<div class="pull-left p-l-10 m-t-10 ">
+							<div>1184<i class="fa fa-eye"></i></div>
+							<div class="">74<i class="fa fa-thumbs-up"></i></div>
+						</div>
+					</div>
+					<div class="col-md-8 vid-desc">
+						<div class="pull-right text-right m-t-10">							
+						The Passing is a very rare short film that has come out of India. At the core of it, it is a pro-exploration propaganda piece from a future where an Artificial Intelligence runs the world 													
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+   </div>	
+     <div class="col grid-box">
+      <div class="photo-container" style="background-image: url(https://www.shortfilmwindow.com/wp-content/uploads/2021/02/chuski-cover-photo-2-1--900x506.jpg);">
+	</div>							
+	 <div class="content-align-bottom">
+											<div class="grid-text-wrap">
+										<div class="grid-title">Chuski</div>
+										<div class="grid-meta ">India/14 MIN</div>
+										<div class="grid-meta">Indian, Drama</div>
+										<div class="grid-meta ">DIR.Utsav Sarkar</div>
+
+									</div>
+									</div>
+		<div class="slide ">
+			<div class="grid-text-wrap hover-text">
+									<div class="grid-title">Chuski</div>
+									<div class="grid-meta">
+										<div class="row">
+											<div class="col-md-4 vid-meta">
+												<div class="pull-left text-center m-t-10 ">
+
+												</div>
+
+												<div class="pull-left p-l-10 m-t-10 ">
+													<div>424<i class="fa fa-eye"></i></div>
+													<div class="">177<i class="fa fa-thumbs-up"></i></div>
+												</div>
+											</div>
+											<div class="col-md-8 vid-desc">
+												<div class="pull-right text-right m-t-10">
+												  
+
+Impeccably performed and superbly casted, Chuski is one of those rare authentic gems that tells a profound story in the most simple way.
+
+Sangita is a middle aged housewife in a lower 												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+   </div>  
+    <div class="col grid-box">
+      <div class="photo-container " style="background-image:url(https://www.shortfilmwindow.com/wp-content/uploads/2020/09/True-Love-Poster-1-900x1125.jpg);">
+	  </div>
+	  <div class="content-align-bottom">
+		<div class="grid-text-wrap">
+			<div class="grid-title">True Love | Thriller</div>
+			<div class="grid-meta ">India/10 MIN</div>
+			<div class="grid-meta">Indian, Horror, Thriller</div>
+			<div class="grid-meta ">DIR.Ranjan Sharma</div>
+		</div>
+		</div>		
+		<div class="slide ">
+		  <div class=" grid-text-wrap hover-text">
+			<div class="grid-title">True Love | Thriller</div>
+										<div class="grid-meta">
+											<div class="row">
+												<div class="col-md-4 vid-meta">
+													<div class="pull-left text-center m-t-10 ">
+
+													</div>
+
+													<div class="pull-left p-l-10 m-t-10 ">
+														<div>672<i class="fa fa-eye"></i></div>
+														<div class="">383<i class="fa fa-thumbs-up"></i></div>
+													</div>
+												</div>
+												<div class="col-md-8 vid-desc">
+													<div class="pull-right text-right m-t-10">
+													  “The course of true love never did run smooth.” ― William Shakespeare True Love is one of those rare thriller, horror that keeps you hooked to its story and then disorients you, makes you 												</div>
+												</div>
+											</div>
+										</div>
+		  </div>
+		</div>		
+ </div>
+    </div>
+	 <div class="row">
+      <div class="col grid-box">
+      <div class="photo-container " style="background-image: url(https://www.shortfilmwindow.com/wp-content/uploads/2020/11/Webp.net-resizeimage-16-900x504.jpg);">
+	  </div>
+	  <div class="content-align-bottom">
+		<div class="grid-text-wrap">
+			<div class="grid-title">Mummy | DIFF 2020</div>
+			<div class="grid-meta ">India/10 MIN</div>
+			<div class="grid-meta">Indian, Horror, Thriller</div>
+			<div class="grid-meta ">DIR.Ranjan Sharma</div>
+		</div>	
+</div>		
+		<div class="slide ">
+		  <div class=" grid-text-wrap hover-text">
+			<div class="grid-title">Mummy | DIFF 2020</div>
+										<div class="grid-meta">
+											<div class="row">
+												<div class="col-md-4 vid-meta">
+													<div class="pull-left text-center m-t-10 ">
+
+													</div>
+
+													<div class="pull-left p-l-10 m-t-10 ">
+														<div>672<i class="fa fa-eye"></i></div>
+														<div class="">383<i class="fa fa-thumbs-up"></i></div>
+													</div>
+												</div>
+												<div class="col-md-8 vid-desc">
+													<div class="pull-right text-right m-t-10">
+													  Mummy is a beautiful, tender, heartwarming film that captures the preparation of separation of 87 year old Zena and her 60 year old mentally handicapped son 												</div>
+												</div>
+											</div>
+										</div>
+		  </div>
+		</div>
+		</div>  
+  <div class="col grid-box">
+      <div class="photo-container" style="background-image: url(https://www.shortfilmwindow.com/wp-content/uploads/2020/10/Webp.net-resizeimage-12-1-900x506.jpg);">											</div>
+	 <div class="content-align-bottom">
+	 
+	
+								<div class="grid-text-wrap">
+									<div class="grid-title">Chuski</div>
+									<div class="grid-meta ">India/14 MIN</div>
+									<div class="grid-meta">Indian, Drama</div>
+									<div class="grid-meta ">DIR.Utsav Sarkar</div>
+</div>
+								</div>	
+ <div class="slide ">								
+								<div class="grid-text-wrap hover-text">
+									<div class="grid-title">Chuski</div>
+									<div class="grid-meta">
+										<div class="row">
+											<div class="col-md-4 vid-meta">
+												<div class="pull-left text-center m-t-10 ">
+
+												</div>
+
+												<div class="pull-left p-l-10 m-t-10 ">
+													<div>424<i class="fa fa-eye"></i></div>
+													<div class="">177<i class="fa fa-thumbs-up"></i></div>
+												</div>
+											</div>
+											<div class="col-md-8 vid-desc">
+												<div class="pull-right text-right m-t-10">
+												  
+
+Impeccably performed and superbly casted, Chuski is one of those rare authentic gems that tells a profound story in the most simple way.
+
+Sangita is a middle aged housewife in a lower 												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div> 
+  </div>
+  </div> 
+  <div class="row">
+   <div class="col grid-box">
+      <div class="photo-container " style="background-image: url(https://www.shortfilmwindow.com/wp-content/uploads/2021/01/Webp.net-resizeimage-17-900x506.jpg);">
+	  </div>
+	  <div class="content-align-bottom">
+		<div class="grid-text-wrap">
+			<div class="grid-title">Darling | SXSW 2020 | TIFF | Venice Film Festival</div>
+			<div class="grid-meta ">India/10 MIN</div>
+			<div class="grid-meta">Indian, Horror, Thriller</div>
+			<div class="grid-meta ">DIR.Ranjan Sharma</div>
+		</div>	
+		</div>
+		<div class="slide ">
+		  <div class=" grid-text-wrap hover-text">
+			<div class="grid-title">Darling | SXSW 2020 | TIFF | Venice Film Festival</div>
+										<div class="grid-meta">
+											<div class="row">
+												<div class="col-md-4 vid-meta">
+													<div class="pull-left text-center m-t-10 ">
+
+													</div>
+
+													<div class="pull-left p-l-10 m-t-10 ">
+														<div>689<i class="fa fa-eye"></i></div>
+														<div class="">354<i class="fa fa-thumbs-up"></i></div>
+													</div>
+												</div>
+												<div class="col-md-8 vid-desc">
+													<div class="pull-right text-right m-t-10">													 
+												  As a new show is introduced at an erotic dance theatre in Lahore, a sacrificial goat goes missing, a dreamy trans girl desperately tries to become a star and a naive young boy falls in 												
+												  </div>
+												</div>
+											</div>
+										</div>
+		  </div>
+		</div>
+		
+  </div>
+    <div class="col grid-box">
+      <div class="photo-container" style="background-image: url(https://www.shortfilmwindow.com/wp-content/uploads/2020/06/Webp.net-resizeimage-3-900x506.jpg);">
+		</div>
+		<div class="content-align-bottom">
+								<div class="grid-text-wrap">
+									<div class="grid-title">This Time Away</div>
+										<div class="grid-meta ">UK/14MIN</div>
+										<div class="grid-meta">Sci-Fi, Award Winning, Family</div>
+										<div class="grid-meta ">DIR.MAGALI BARBE</div>
+								</div>
+							</div>
+			<div class="slide ">
+								<div class="grid-text-wrap hover-text">
+									<div class="grid-title">This Time Away</div>
+									<div class="grid-meta">
+										<div class="row">
+											<div class="col-md-4 vid-meta">
+												<div class="pull-left text-center m-t-10 ">
+
+												</div>
+
+												<div class="pull-left p-l-10 m-t-10 ">
+													<div>424<i class="fa fa-eye"></i></div>
+													<div class="">177<i class="fa fa-thumbs-up"></i></div>
+												</div>
+											</div>
+											<div class="col-md-8 vid-desc">
+												<div class="pull-right text-right m-t-10">We have seen many old man/old woman robot films yet this one touches our heart because of its genuine simplicity and the final emotional twist that the writer, director has planted. This   																	</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+	</div>
+    <div class="col grid-box">
+      <div class="photo-container " style="background-image: url(https://www.shortfilmwindow.com/wp-content/uploads/2020/07/Gulabi-Lends-900x376.png);">
+	  </div>
+		<div class="content-align-bottom">
+			<div class="grid-text-wrap">
+				<div class="grid-title">Gulabi Lens</div>
+				<div class="grid-meta ">India/17 MIN</div>
+				<div class="grid-meta">Indian, Experimental, Drama</div>
+				<div class="grid-meta ">DIR.Raghavi Agarwal</div>	
+			</div>
+		</div>     
+    <div class="slide "> 
+		<div class="grid-text-wrap hover-text">
+			<div class="grid-title">Gulabi Lens</div>
+			<div class="grid-meta">
+				<div class="row">
+					<div class="col-md-4 vid-meta">						
+						<div class="pull-left p-l-10 m-t-10 ">
+							<div>1184<i class="fa fa-eye"></i></div>
+							<div class="">74<i class="fa fa-thumbs-up"></i></div>
+						</div>
+					</div>
+					<div class="col-md-8 vid-desc">
+						<div class="pull-right text-right m-t-10">The story opens with a newly married Ravi & Suman arriving at his single room house, in Mumbai. Ravi is proud of the little nest he’s built. Suman is wide eyed and slightly  
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+   </div>	
+    <div class="col grid-box">
+      <div class="photo-container " style="background-image: url(https://www.shortfilmwindow.com/wp-content/uploads/2021/01/55kmsec_poster_1920x1080-1-900x506.jpg);">
+	  </div>
+		<div class="content-align-bottom">
+			<div class="grid-text-wrap">
+									<div class="grid-title">55 km / sec</div>
+									<div class="grid-meta ">India/22 MIN</div>
+									<div class="grid-meta">Indian, Sci-Fi, Romance, Drama</div>
+									<div class="grid-meta ">DIR.Arati Kadav </div>
+								</div>
+		</div>     
+		<div class="slide "> 
+		<div class="grid-text-wrap hover-text">
+			<div class="grid-title">55 km / sec</div>
+			<div class="grid-meta">
+				<div class="row">
+					<div class="col-md-4 vid-meta">						
+						<div class="pull-left p-l-10 m-t-10 ">
+							<div>1184<i class="fa fa-eye"></i></div>
+							<div class="">74<i class="fa fa-thumbs-up"></i></div>
+						</div>
+					</div>
+					<div class="col-md-8 vid-desc">
+						<div class="pull-right text-right m-t-10">55 Km/sec is a love story set on the last day of planet Earth. A cataclysmic event has occurred, life as we knew it is ending, and people have retreated into their shells as they wait 												
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+   </div>	
+  </div>
+  <div class="row">
+  
+     <div class="  col grid-box">
+      <div class="photo-container " style="background-image: url(https://www.shortfilmwindow.com/wp-content/uploads/2016/09/RUN-900x506.jpg);">
+	  </div>
+		<div class="content-align-bottom">
+			<div class="grid-text-wrap"> <div class="grid-title">Run</div> <div class="grid-meta ">UK/7MIN</div><div class="grid-meta">Drama</div><div class="grid-meta ">DIR.THEA GAJIC</div></div>
+		</div>     
+		<div class="slide "> 
+		<div class="grid-text-wrap hover-text"><div class="grid-title">Run</div><div class="grid-meta"><div class="row"><div class="col-md-4 vid-meta"><div class="pull-left text-center m-t-10 "> </div><div class="pull-left p-l-10 m-t-10 "> <div>381<i class="fa fa-eye"></i></div><div class="">105<i class="fa fa-thumbs-up"></i></div> </div></div><div class="col-md-8 vid-desc"><div class="pull-right text-right m-t-10">"Women come into your lives and create storms."Gentle, conversational, and filled with some surprising and ephemeral moments, like something grabbed from a random any-day that exists in the </div>
+		</div>
+		</div>
+		</div>
+		</div>
+	</div>
+   </div>
+	 <div class=" col-6 col grid-box">
+      <div class="photo-container"style="background-image: url(https://www.shortfilmwindow.com/wp-content/uploads/2020/06/Webp.net-resizeimage-900x506.jpg);">											</div>
+	 <div class="content-align-bottom">
+	 
+	
+								<div class="grid-text-wrap">
+									<div class="grid-title">Negative Space (Oscar nominated)</div>
+									<div class="grid-meta ">India/14 MIN</div>
+									<div class="grid-meta">Indian, Drama</div>
+									<div class="grid-meta ">DIR.Utsav Sarkar</div>
+</div>
+								</div>	
+ <div class="slide ">								
+								<div class="grid-text-wrap hover-text">
+									<div class="grid-title">Negative Space (Oscar nominated)</div>
+									<div class="grid-meta">
+										<div class="row">
+											<div class="col-md-4 vid-meta">
+												<div class="pull-left text-center m-t-10 ">
+
+												</div>
+
+												<div class="pull-left p-l-10 m-t-10 ">
+													<div>424<i class="fa fa-eye"></i></div>
+													<div class="">177<i class="fa fa-thumbs-up"></i></div>
+												</div>
+											</div>
+											<div class="col-md-8 vid-desc">
+												<div class="pull-right text-right m-t-10">Academy Award nominated “Negative Space" is a short animated film that depicts a father-and-son relationship through the act of packing a suitcase. Based on a 150-word prose poem by Ron Koertge, 												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div> 
+  </div>
+     <div class=" col grid-box">
+      <div class="photo-container " style="background-image: url(https://www.shortfilmwindow.com/wp-content/uploads/2015/05/newborns-Copy1-900x506.jpg);">
+	  </div>
+		<div class="content-align-bottom">
+			<div class="grid-text-wrap">
+				<div class="grid-title">NewBorns</div>
+				<div class="grid-meta ">India/08MIN</div>
+				<div class="grid-meta">Indian, Offline</div>
+				<div class="grid-meta ">DIR.MEGHA RAMASWAMY </div> 
+			</div>
+		</div>     
+		<div class="slide "> 
+		<div class="grid-text-wrap hover-text">
+			<div class="grid-title">NewBorns</div>
+			<div class="grid-meta">
+				<div class="row">
+					<div class="col-md-4 vid-meta">						
+						<div class="pull-left p-l-10 m-t-10 ">
+							<div>1184<i class="fa fa-eye"></i></div>
+							<div class="">74<i class="fa fa-thumbs-up"></i></div>
+						</div>
+					</div>
+					<div class="col-md-8 vid-desc">
+						<div class="pull-right text-right m-t-10">What if one day another man, dressed like a joker, sits in the bus? You will probably confuse him as me. 											
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+   </div>
+	
+	
+    
+ 
+</div>
+ <div class="indian">
+	<h3>INDIAN</h3>
+	<hr class="m-t-0">
+	<div class="row">  
+    <div class="col grid-box">
+      <div class="photo-container " style="background-image: url(https://www.shortfilmwindow.com/wp-content/uploads/2021/03/Webp.net-resizeimage-20-900x603.jpg);"> 
+	  </div>
+		<div class="content-align-bottom">
+			<div class="grid-text-wrap">
+				<div class="grid-title">The Passing</div>
+				<div class="grid-meta ">India/17 MIN</div>
+				<div class="grid-meta">Indian, Experimental, Drama</div>
+				<div class="grid-meta ">DIR.Raghavi Agarwal</div>	
+			</div>
+		</div>     
+		<div class="slide "> 
+		<div class="grid-text-wrap hover-text">
+			<div class="grid-title">The Passing</div>
+			<div class="grid-meta">
+				<div class="row">
+					<div class="col-md-4 vid-meta">						
+						<div class="pull-left p-l-10 m-t-10 ">
+							<div>1184<i class="fa fa-eye"></i></div>
+							<div class="">74<i class="fa fa-thumbs-up"></i></div>
+						</div>
+					</div>
+					<div class="col-md-8 vid-desc">
+						<div class="pull-right text-right m-t-10">							
+						The Passing is a very rare short film that has come out of India. At the core of it, it is a pro-exploration propaganda piece from a future where an Artificial Intelligence runs the world 													
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+   </div>	
+     <div class="col grid-box">
+      <div class="photo-container" style="background-image: url(https://www.shortfilmwindow.com/wp-content/uploads/2021/02/chuski-cover-photo-2-1--900x506.jpg);">
+	</div>							
+	 <div class="content-align-bottom">
+											<div class="grid-text-wrap">
+										<div class="grid-title">Chuski</div>
+										<div class="grid-meta ">India/14 MIN</div>
+										<div class="grid-meta">Indian, Drama</div>
+										<div class="grid-meta ">DIR.Utsav Sarkar</div>
+
+									</div>
+									</div>
+		<div class="slide ">
+			<div class="grid-text-wrap hover-text">
+									<div class="grid-title">Chuski</div>
+									<div class="grid-meta">
+										<div class="row">
+											<div class="col-md-4 vid-meta">
+												<div class="pull-left text-center m-t-10 ">
+
+												</div>
+
+												<div class="pull-left p-l-10 m-t-10 ">
+													<div>424<i class="fa fa-eye"></i></div>
+													<div class="">177<i class="fa fa-thumbs-up"></i></div>
+												</div>
+											</div>
+											<div class="col-md-8 vid-desc">
+												<div class="pull-right text-right m-t-10">
+												  
+
+Impeccably performed and superbly casted, Chuski is one of those rare authentic gems that tells a profound story in the most simple way.
+
+Sangita is a middle aged housewife in a lower 												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+   </div>  
+    <div class="col grid-box">
+      <div class="photo-container " style="background-image: url(https://www.shortfilmwindow.com/wp-content/uploads/2021/01/55kmsec_poster_1920x1080-1-900x506.jpg);">
+	  </div>
+		<div class="content-align-bottom">
+			<div class="grid-text-wrap">
+									<div class="grid-title">55 km / sec</div>
+									<div class="grid-meta ">India/22 MIN</div>
+									<div class="grid-meta">Indian, Sci-Fi, Romance, Drama</div>
+									<div class="grid-meta ">DIR.Arati Kadav </div>
+								</div>
+		</div>     
+		<div class="slide "> 
+		<div class="grid-text-wrap hover-text">
+			<div class="grid-title">55 km / sec</div>
+			<div class="grid-meta">
+				<div class="row">
+					<div class="col-md-4 vid-meta">						
+						<div class="pull-left p-l-10 m-t-10 ">
+							<div>1184<i class="fa fa-eye"></i></div>
+							<div class="">74<i class="fa fa-thumbs-up"></i></div>
+						</div>
+					</div>
+					<div class="col-md-8 vid-desc">
+						<div class="pull-right text-right m-t-10">55 Km/sec is a love story set on the last day of planet Earth. A cataclysmic event has occurred, life as we knew it is ending, and people have retreated into their shells as they wait 												
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+   </div>
+    </div>
+</div>
+<div class="article">
+	<h3>ARTICLE</h3>
+	<hr class="m-t-0">				
+				  <div class="row">
+	<ul class="honeycomb" lang="es">
+  <li class="honeycomb-cell">
+    <img class="honeycomb-cell__image" src="https://www.shortfilmwindow.com/wp-content/uploads/2021/03/Webp.net-resizeimage-20-900x603.jpg">
+    <div class="honeycomb-cell__title">
+		<a href="https://www.shortfilmwindow.com/article/the-wonderful-quirky-mind-of-ankur-kapoor/">Spotlight: The Wonderful Quirky Mind Of Ankur Kapoor</a>
+	</div>
+  </li>
+  <li class="honeycomb-cell">
+    <img class="honeycomb-cell__image" src="https://www.shortfilmwindow.com/wp-content/uploads/2020/07/Gulabi-Lends-900x376.png">
+    <div class="honeycomb-cell__title">
+		<a href="https://www.shortfilmwindow.com/article/the-wonderful-quirky-mind-of-ankur-kapoor/">Saurabh Gupta on Making Gulabi Lens</a>
+	</div>
+  </li>
+  <li class="honeycomb-cell">
+    <img class="honeycomb-cell__image" src="https://www.shortfilmwindow.com/wp-content/uploads/2015/10/Devashish_makhija-900x600.jpg">
+    <div class="honeycomb-cell__title">
+		<a href="https://www.shortfilmwindow.com/devashish-makhija-on-his-work-his-writing-and-the-5-rules-to-remember-before-making-your-short">Devashish Makhija on his work, his writing and the 5 rules to remember before making your short</a>
+	</div>
+  </li>
+  <li class="honeycomb-cell">
+   <img class="honeycomb-cell__image" src="https://www.shortfilmwindow.com/wp-content/uploads/2020/06/Webp.net-resizeimage-4-900x506.jpg">
+    <div class="honeycomb-cell__title">
+		<a href="https://www.shortfilmwindow.com/ashutosh-pathak-sharid-hashmi-and-arjun-radhakrishnan-talk-about-making-their-lockdown-shot-goldphlake">Ashutosh Pathak, Sharib Hashmi and Arjun Radhakrishnan on making their lockdown short GoldPhlake	</a>
+	</div>
+  </li>  
+    <li class="honeycomb-cell">
+    <img class="honeycomb-cell__image" src="https://www.shortfilmwindow.com/wp-content/uploads/2016/07/Kevork_aslanyan-900x621.jpg">
+    <div class="honeycomb-cell__title">
+		<a  href="https://www.shortfilmwindow.com/kevork_aslanyan">The idea was to tell a love story between a skinny man and a plump woman. To illustrate true love at its best. Gravity, came up afterwards		</a>
+	</div>
+  </li>
+  <li class="honeycomb-cell">
+    <img class="honeycomb-cell__image" src="https://www.shortfilmwindow.com/wp-content/uploads/2013/12/Clockwork-Orange-20-900x565.jpg">
+    <div class="honeycomb-cell__title">
+		<a href="https://www.shortfilmwindow.com/study-of-stanley-kubrick-philosophy-architecture-sound-music-and-colors">Stanley Kubrick	</a>
+	</div>
+  </li>
+    <li class="honeycomb-cell">
+    <img class="honeycomb-cell__image" src="https://www.shortfilmwindow.com/wp-content/uploads/2015/12/Header_2015-900x900.jpg">
+    <div class="honeycomb-cell__title">
+		<a href="https://www.shortfilmwindow.com/sfws-best-shorts-of-2015">SFW's BEST SHORTS OF  2015 </a>
+	</div>
+  </li>
+  <li class="honeycomb-cell">
+    <img class="honeycomb-cell__image" src=" https://www.shortfilmwindow.com/wp-content/uploads/2015/11/Rahul_Prakash-900x599.jpg">
+    <div class="honeycomb-cell__title">
+		<a href="https://www.shortfilmwindow.com/infocus-with-rahul-prakash-director-of-total-internal-reflection">In Focus with Rahul Prakash, director of Total Internal Reflection</a>
+	</div>
+  </li>  
+  <li class="honeycomb-cell">
+    <img class="honeycomb-cell__image" src="https://www.shortfilmwindow.com/wp-content/uploads/2015/09/Siberia-Poster-2Small-900x563.jpg">
+    <div class="honeycomb-cell__title">
+	<a href="https://www.shortfilmwindow.com/exclusive-trailer-launch-siberia">Exclusive Trailer Launch: Siberia </a>
+	</div>
+  </li>
+  <li class="honeycomb-cell honeycomb__placeholder"></li>
+	</ul>
+</div>
+ </div>
+ </div>
+</div>
+<footer class="footer m-t-20">
+	 <div class="footer-container">
+		<div class="row">
+		    <div class="col-md-8">
+		        <div class="footer-links clearfix">
+					<ul id="menu-footer-menu" class="menu">
+						<li id="menu-item-1123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1123">
+							<a href="https://www.shortfilmwindow.com/about/">About</a>
+						</li>
+						<li id="menu-item-1124" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1124">
+							<a href="https://www.shortfilmwindow.com/contact-us/">Contact Us</a>
+						</li>	
+						<li id="menu-item-1125" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1125">
+							<a href="https://www.shortfilmwindow.com/submit-film/">Submit Film</a>
+						</li>
+						<li id="menu-item-1126" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1126">
+							<a href="https://www.shortfilmwindow.com/playlist/">Playlists</a>
+						</li>
+						<li id="menu-item-1127" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1127">
+							<a href="https://www.shortfilmwindow.com/faq/">FAQ</a>
+						</li>
+						<li id="menu-item-1128" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-11 current_page_item menu-item-1128 active">
+							<a href="https://www.shortfilmwindow.com/articles/" aria-current="page">Articles</a>
+						</li>
+						<li id="menu-item-1129" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1129">
+							<a href="https://www.shortfilmwindow.com/movies/">Movies</a>
+						</li>
+						<li id="menu-item-1130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1130">
+							<a href="https://www.shortfilmwindow.com/be-an-ambassador/">Be an Ambassador</a>
+						</li>
+</ul>
+</div>
+  </div>
+		            <div class="col-md-4 break-cols">		            	
+			                        <h6 for="" class=" follow">FOLLOW US</h6>			                        
+			                            <div class="social-links">
+										    <div class="fb link">			                                  
+												<div class="fb-follow" data-href="https://www.facebook.com/Shortfilmwindow" data-colorscheme="light" data-layout="button" data-show-faces="false">
+												</div>
+			                                </div>			                              
+			                                  	<div class="twitter link">
+													<iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 76px; height: 20px;" title="Twitter Follow Button" src="https://platform.twitter.com/widgets/follow_button.2b2d73daf636805223fb11d48f3e94f7.en.html#dnt=false&amp;id=twitter-widget-1&amp;lang=en&amp;screen_name=shortfilmwindow&amp;show_count=false&amp;show_screen_name=false&amp;size=m&amp;time=1676226294653" data-screen-name="shortfilmwindow"></iframe>
+												</div> 
+												
+			                                <div class="youtube link">
+												<div id="___ytsubscribe_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 84px; height: 24px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 84px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" width="100%" id="I0_1676226293758" name="I0_1676226293758" src="https://www.youtube.com/subscribe_embed?usegapi=1&amp;channelid=UCt98fHqG3GFj8mJNjee53BQ&amp;layout=default&amp;count=hidden&amp;origin=https%3A%2F%2Fwww.shortfilmwindow.com&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.AMZ27oQJoUI.O%2Fd%3D1%2Frs%3DAHpOoo9dsXwz2g0gTMdQFEKa7ZoVvtQf4g%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1676226293758&amp;_gfid=I0_1676226293758&amp;parent=https%3A%2F%2Fwww.shortfilmwindow.com&amp;pfname=&amp;rpctoken=29964154" data-gapiattached="true"></iframe></div>
+			                                </div>
+			                            </div>
+			                        </div>
+		                        </div>	                        
+	                       <!-- <div class="col-xs-7 col-md-12">								
+
+								<script>(function() {
+	if (!window.mc4wp) {
+		window.mc4wp = {
+			listeners: [],
+			forms    : {
+				on: function (event, callback) {
+					window.mc4wp.listeners.push({
+						event   : event,
+						callback: callback
+					});
+				}
+			}
+		}
+	}
+})();
+</script>
+<!-- Mailchimp for WordPress v4.5.3 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
+<!--<form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-1033 mc4wp-form-theme mc4wp-form-theme-light" method="post" data-id="1033" data-name="Default sign-up form"><div class="mc4wp-form-fields"><div class="form-group has-feedback row">
+				                        <label for="" class="col-sm-5 col-md-4 text-right">SUBSCRIBE</label>
+				                        <div class="col-sm-7 col-md-8">
+				                            <input type="email" id="mc4wp_email" name="EMAIL" class="form-control input-sm subscribe" placeholder="Subscribe to our newsletter to know about latest movies and articles">
+				                            <button type="submit" class="form-control-feedback"><i class="fa fa-envelope fa-2x"></i></button>
+				                            
+				                        </div>
+				                    </div></div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></label><input type="hidden" name="_mc4wp_timestamp" value="1676220163"><input type="hidden" name="_mc4wp_form_id" value="1033"><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1"><div class="mc4wp-response"></div></form>-->
+									<!-- / Mailchimp for WordPress Plugin -->	
+									<!-- </div>-->
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+			</footer>
+		    <div class="container-fluid footer-bar">
+		        © ShortFilmWindow | All Rights Reserved.
+		    </div>
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+$(function(){
+  $(window).scroll(function(){
+    var winTop = $(window).scrollTop();
+    if(winTop >= 30){
+      $("body").addClass("sticky-header");
+    }else{
+      $("body").removeClass("sticky-header");
+    }//if-else
+  });//win func.
+});//ready func.
+</script>
+</body>
+</html>
